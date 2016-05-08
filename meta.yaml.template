@@ -1,0 +1,23 @@
+package:
+  name: %(name)s
+  version: "%(version)s"
+
+source:
+  git_rev: v%(version)s
+  git_url: %(git_clone_url)s
+
+requirements:
+  build:
+%(build_requirements)s
+
+  run:
+%(run_requirements)s
+
+test:
+  imports:
+    - %(import_test)s
+
+about:
+  home: %(home_url)s
+  license:
+  license_file:
