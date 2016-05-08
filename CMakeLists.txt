@@ -8,6 +8,7 @@ configure_file(build.sh build.sh)
 add_custom_command(
   OUTPUT meta.yaml
   COMMAND python make_meta.py
+  DEPENDS make_meta.py meta.yaml.template
   )
 
 # this will build the conda package
