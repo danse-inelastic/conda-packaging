@@ -3,7 +3,7 @@ package:
   version: "%(version)s"
 
 source:
-  git_rev: v%(version)s
+  git_rev: %(git_revision)s
   git_url: %(git_clone_url)s
 
 requirements:

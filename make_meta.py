@@ -2,6 +2,7 @@
 
 name = "${PKG_NAME}"
 version = "${VERSION}"
+git_revision = "${GIT_RELEASE_TAG}" or ('v'+version)
 git_clone_url = "${GITHUB_URL}.git"
 
 build_deps = "${CONDA_PKGING_BUILD_DEPS}".split()
