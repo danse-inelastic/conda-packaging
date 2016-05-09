@@ -1,5 +1,9 @@
 # docker 
 
+IF( "${CONDA_BUILD_MAKE_CMD}" STREQUAL "")
+  set(CONDA_BUILD_MAKE_CMD "cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DDEPLOYMENT_PREFIX=$PREFIX .. && make -j $CORES && make install")
+ENDIF()
+
 configure_file(make_meta.py make_meta.py)
 configure_file(meta.yaml.template meta.yaml.template)
 configure_file(bld.bat bld.bat)
