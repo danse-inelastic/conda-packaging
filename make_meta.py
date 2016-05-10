@@ -13,6 +13,7 @@ build_requirements = '\n'.join("    - %s" % d for d in build_deps)
 run_requirements = '\n'.join("    - %s" % d for d in run_deps)
 
 import_test = "${PKG_NAME}"
+test_script = "${CONDA_TEST_SCRIPT}"
 home_url = "${HOME_URL}"
 
 template = open("meta.yaml.template").read()

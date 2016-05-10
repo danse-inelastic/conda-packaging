@@ -16,6 +16,7 @@ requirements:
 test:
   imports:
     - %(import_test)s
+  %(test_script)s
 
 about:
   home: %(home_url)s
