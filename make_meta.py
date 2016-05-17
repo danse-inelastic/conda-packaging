@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 name = "${PKG_NAME}"
-version = "${VERSION}"
+version = "${VERSION_FOR_CONDA_PKGING}" or "${VERSION}"
 git_revision = "${GIT_RELEASE_TAG}" or ('v'+version)
 git_clone_url = "${GITHUB_URL}.git"
 
