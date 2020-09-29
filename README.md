@@ -1,5 +1,6 @@
 # conda-packaging
-used by danse.ins packages to create conda packages
+This was used by danse.ins packages to create conda packages. 
+Recently the danse.ins packages are mostly built using recipes in https://github.com/mcvine/conda-recipes/tree/master/danse instead.
 
 A danse.ins package will need to modify CMakeLists.txt to
 first obtain the danse-inelastic/cmake_utils:
